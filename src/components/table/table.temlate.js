@@ -31,7 +31,7 @@ function createRow(index, content) {
   `
 }
 
-function toChar( _, index) {
+function toChar(_, index) {
   return String.fromCharCode(CODES.A + index)
 }
 
@@ -52,7 +52,7 @@ export function createTable(rowsCount = 15) {
         .fill('')
         .map(toCell)
         .join('')
-    rows.push(createRow(i+1, cells))
+    rows.push(createRow(i + 1, cells))
   }
 
   return rows.join('')
